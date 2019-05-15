@@ -2,7 +2,8 @@
 A way for new  feature introduction and step-by-step users guide for your react-native app
 
 # Install
-Run ```npm install react-native-intro --save``` in your Project dir
+
+add "react-native-intro": "git+https://github.com/ylnjuuju/react-native-intro.git" to package.json file and npm install
 
 # Usage
 
@@ -12,10 +13,11 @@ Run ```npm install react-native-intro --save``` in your Project dir
 
 ```
 import Intro, {IntroManage} from 'react-native-intro';
-
+// collapsable make sure android measure method can get value
 <Intro
     content={"hello world"}
     step={1}>
+    collapsable={false}
 </Intro>
 
 .....
