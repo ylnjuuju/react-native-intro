@@ -207,8 +207,8 @@ export class IntroModal extends Component {
             ]}
           >
             <View style={{ flex: 1 }}>{this.content || null}</View>
-            <View style={[styles.introBar]}>
-              <View
+            {/* <View style={[styles.introBar]}> */}
+              {/* <View
                 style={[
                   styles.introButton,
                   {
@@ -217,7 +217,7 @@ export class IntroModal extends Component {
                   },
                 ]}
                 onTouchStart={() => this.props.stop()}
-              >
+              > */}
                 {/* <Text
                   style={[
                     styles.buttonText,
@@ -228,7 +228,7 @@ export class IntroModal extends Component {
                 >
                   OK
                 </Text> */}
-              </View>
+              {/* </View> */}
               {/* <View
                 style={[styles.introButton]}
                 onTouchStart={() => this.props.prev()}
@@ -241,7 +241,7 @@ export class IntroModal extends Component {
               >
                 <Text style={[styles.buttonText]}>next</Text>
               </View> */}
-            </View>
+            {/* </View> */}
           </Animated.View>
         )}
       </View>
