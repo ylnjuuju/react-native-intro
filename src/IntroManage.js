@@ -103,6 +103,7 @@ export class IntroManage {
   toStep = (index) => {
     this.index = index;
     const currentStep = this.introData[this.stepArr[index]];
+    if (!currentStep) return;
     const content = currentStep.content;
 
     const target = currentStep.target;
